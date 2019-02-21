@@ -7,11 +7,13 @@
 //
 
 import Foundation
+import CarthageTestB
 
 public class CarthageC {
     public static let shared = CarthageC()
     
     public func work() {
+        CarthageB.shared.work()
         print("Carthage C Ran!")
     }
 }

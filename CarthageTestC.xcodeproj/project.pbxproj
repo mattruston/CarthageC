@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		19838DA7221F002C00782CC0 /* CarthageTestC.h in Headers */ = {isa = PBXBuildFile; fileRef = 19838DA5221F002C00782CC0 /* CarthageTestC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		19838DAE221F004000782CC0 /* CarthageC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19838DAD221F004000782CC0 /* CarthageC.swift */; };
+		19838DB4221F05C200782CC0 /* CarthageTestB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19838DB3221F05C200782CC0 /* CarthageTestB.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		19838DA5221F002C00782CC0 /* CarthageTestC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarthageTestC.h; sourceTree = "<group>"; };
 		19838DA6221F002C00782CC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19838DAD221F004000782CC0 /* CarthageC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarthageC.swift; sourceTree = "<group>"; };
+		19838DB3221F05C200782CC0 /* CarthageTestB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CarthageTestB.framework; path = Carthage/Build/iOS/CarthageTestB.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,6 +25,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19838DB4221F05C200782CC0 /* CarthageTestB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +37,7 @@
 			children = (
 				19838DA4221F002C00782CC0 /* CarthageTestC */,
 				19838DA3221F002C00782CC0 /* Products */,
+				19838DB2221F05C200782CC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +57,14 @@
 				19838DAD221F004000782CC0 /* CarthageC.swift */,
 			);
 			path = CarthageTestC;
+			sourceTree = "<group>";
+		};
+		19838DB2221F05C200782CC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19838DB3221F05C200782CC0 /* CarthageTestB.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +285,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CarthageTestC/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -299,6 +315,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CarthageTestC/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
