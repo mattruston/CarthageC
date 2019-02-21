@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		19838DA7221F002C00782CC0 /* CarthageTestC.h in Headers */ = {isa = PBXBuildFile; fileRef = 19838DA5221F002C00782CC0 /* CarthageTestC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19838DAE221F004000782CC0 /* CarthageC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19838DAD221F004000782CC0 /* CarthageC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		19838DA2221F002C00782CC0 /* CarthageTestC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CarthageTestC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19838DA5221F002C00782CC0 /* CarthageTestC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarthageTestC.h; sourceTree = "<group>"; };
 		19838DA6221F002C00782CC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19838DAD221F004000782CC0 /* CarthageC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarthageC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				19838DA5221F002C00782CC0 /* CarthageTestC.h */,
 				19838DA6221F002C00782CC0 /* Info.plist */,
+				19838DAD221F004000782CC0 /* CarthageC.swift */,
 			);
 			path = CarthageTestC;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					19838DA1221F002C00782CC0 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19838DAE221F004000782CC0 /* CarthageC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		19838DAB221F002C00782CC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -277,6 +283,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.underarmour.CarthageTestC;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +292,7 @@
 		19838DAC221F002C00782CC0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
